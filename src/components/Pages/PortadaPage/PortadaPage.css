@@ -1,0 +1,203 @@
+/*--------------------------------------------------------------
+# Portada Section
+--------------------------------------------------------------*/
+#portada {
+    width: 100%;
+    background: url("../../../assets/img/portada-bg.jpg") bottom center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #portada:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #portada .portada-container {
+    position: absolute;
+    bottom: 0;
+    top: 20;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  #portada h2 {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--clr-white);
+    font-size: 26px;
+    padding: 10px 30px;
+    top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+  
+  #portada h2 strong {
+    font-family: 'another';
+    font-weight: 100;
+    font-size: larger;
+  }
+  
+  #portada h1 {
+    margin: 0 0 10px 0;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: var(--clr-white);
+  }
+  
+  #portada p{
+    color: var(--clr-white);
+    font-size: 24px;
+  }
+  
+  #portada .btn-get-started {
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid var(--clr-white);
+    color: var(--clr-white);
+  }
+  
+  #portada .btn-ig-xs{
+    display: none;
+  }
+  
+  #portada .btn-get-started:hover {
+    background: var(--clr-darkgreen);
+    border: 2px solid var(--clr-darkgreen);
+  }
+  
+  
+  /** Laptop Large 1440px css puro **/
+  
+  /** Laptop 1024px **/
+  @media (min-width: 1024px)  {
+    #header .logo-img {
+      max-height: 80px;
+    }
+  
+    #header .bolsa-img {
+      max-height: 80px;
+    }
+  
+    #portada {
+      height: 420px;
+    }
+  
+    #portada h2 {
+      font-size: 32px;
+    }
+  
+    #portada h1 {
+      font-size: 40px;
+      line-height: 36px;
+    }
+  
+    #portada p{
+      font-size: 18px;
+    }
+  }
+  
+  /** Tablet 768px **/
+  
+  @media (max-width: 768px) {
+    #header .logo-img {
+      max-height: 70px;
+    }
+  
+    #header .bolsa-img {
+      max-height: 70px;
+    }
+  
+    #portada h2 {
+      font-size: 28px;
+    }
+  
+    #portada h1 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  
+    #portada p{
+      font-size: 18px;
+    }
+  }
+  
+  /** Móvil L 425px **/
+  @media (max-width: 426px) {
+    #header .logo-img {
+      max-height: 50px;
+    }
+  
+    #header .bolsa-img {
+      max-height: 50px;
+    }
+  
+    #portada .btn-get-started{
+      display: none;
+    }
+  
+    #portada .btn-ig-xs{
+      font-family: "Nunito", sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 8px 28px;
+      border-radius: 25px;
+      transition: 0.5s;
+      margin-top: 10px;
+      line-height: 1;
+      -webkit-animation-delay: 0.8s;
+      animation-delay: 0.8s;
+      margin-top: 6px;
+      border: 2px solid var(--clr-darkgreen);
+      color: var(--clr-white);
+    }
+  
+    #portada h2 {
+      font-size: 28px;
+      margin: 0 70px 30px;
+    }
+  
+    #portada h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #portada p{
+      display: none;
+    }
+  }
+  
+  @media (min-height: 600px){
+    #portada {
+      height: 420px;
+    }
+  }
+  
+  @media (max-height: 600px){
+    #portada {
+      height: 75vh;
+    }
+  }
